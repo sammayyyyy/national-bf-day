@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(135deg, #c0f0f8, #d1c0ff); /* soft teal to light purple */
-  color: #333;
+  color: #000; /* default black text for readability */
   text-align: center;
 }
 
@@ -21,12 +21,13 @@ body {
 header h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+  color: #000;
 }
 
 header p {
   font-size: 1.2rem;
   margin-bottom: 20px;
-  color: #555;
+  color: #000;
 }
 
 .header-gif {
@@ -57,7 +58,7 @@ header p {
   border-radius: 15px;
   padding: 15px;
   text-decoration: none;
-  color: #333;
+  color: #000; /* black text */
   box-shadow: 0 6px 20px rgba(0,0,0,0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   flex: 1 1 20%;
@@ -90,33 +91,48 @@ header p {
   border-radius: 15px;
   background: #e0f7f9; /* light teal for all sections */
   box-shadow: 0 6px 15px rgba(0,0,0,0.05);
-  color: #000; /* black text by default */
+  color: #000; /* black text for readability */
 }
 
-/* ==== GIFTS AND BULLETS ACCENTS ==== */
+/* ===== GIFTS AND BULLETS ACCENTS ===== */
 .gifts-list .gift-card, .bullet-points .cute-note {
   text-align: left;
   margin: 10px 0;
   padding: 10px;
-  background: #d1c0ff; /* light purple accents */
+  background: #c0d6f9; /* soft matching accent */
   border-radius: 12px;
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #000; /* black text inside gift cards */
+  color: #000; /* black text inside cards */
 }
 
 /* ===== LOVE LETTER TEXT ===== */
 .love-letter p {
   line-height: 1.6;
   font-size: 1rem;
-  color: #000;
 }
 
-/* ===== VIDEO ===== */
+/* ===== VIDEO SECTION ===== */
+.video-section {
+  background: #c0d6f9; /* same soft accent as gifts */
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  margin: 20px 0;
+  color: #000; /* black text */
+}
+
 .video-section iframe {
   border-radius: 15px;
   margin-top: 15px;
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+}
+
+.video-section p {
+  margin-top: 10px;
 }
 
 /* ===== BACK LINK ===== */
@@ -124,7 +140,7 @@ header p {
   display: inline-block;
   margin-top: 25px;
   text-decoration: none;
-  color: #fff; /* white text for all back buttons */
+  color: #fff; /* white text */
   background: #66c2ff; /* teal back button */
   padding: 10px 20px;
   border-radius: 12px;
@@ -134,7 +150,7 @@ header p {
 
 .back:hover {
   background: #a366ff; /* purple hover */
-  color: #fff; /* text stays white on hover */
+  color: #fff; /* text stays white */
 }
 
 /* ===== SCROLLBAR STYLING FOR CARD GRID ===== */
@@ -154,25 +170,4 @@ header p {
 
 .card-grid::-webkit-scrollbar-thumb:hover {
   background: #a366ff;
-}
-
-/* ===== PAGE HEADERS (for gifts and cinema) ===== */
-.container header {
-  background: #e0f7f9; /* same light teal as sections */
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
-}
-
-.container header h1, 
-.container header p {
-  color: #000; /* black text for readability */
-}
-
-.container header img.header-gif {
-  margin: 15px 0;
-}
-
-.container header img.small-gif {
-  margin-left: 10px;
 }
