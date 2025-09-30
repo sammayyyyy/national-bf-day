@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   margin: 0;
   padding: 0;
   background: linear-gradient(135deg, #6695af, #598fb3); /* soft gradient */
@@ -87,3 +87,4 @@ video {
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+
