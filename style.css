@@ -162,3 +162,24 @@ header p {
   background: #d1c0ff; /* light purple accents */
   color: #000; /* black text inside gift cards */
 }
+
+/* ===== PAGE HEADERS (for gifts and cinema) ===== */
+.container header {
+  background: #e0f7f9; /* same light teal as sections */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+}
+
+.container header h1, 
+.container header p {
+  color: #000; /* black text for readability */
+}
+
+.container header img.header-gif {
+  margin: 15px 0;
+}
+
+.container header img.small-gif {
+  margin-left: 10px;
+}
