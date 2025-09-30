@@ -43,12 +43,12 @@ header p {
 /* ===== CARD GRID (Homepage) ===== */
 .card-grid {
   display: flex;
-  flex-wrap: nowrap; /* keeps all cards in a single row */
+  flex-wrap: nowrap;   /* prevent wrapping to next row */
   justify-content: center;
   gap: 20px;
   margin-top: 30px;
-  overflow-x: auto; /* horizontal scroll if necessary */
-  padding-bottom: 10px;
+  overflow-x: auto;    /* allows horizontal scrolling if screen is too narrow */
+  padding-bottom: 10px; /* optional, for spacing under cards */
 }
 
 .card {
@@ -148,3 +148,4 @@ header p {
 .card-grid::-webkit-scrollbar-thumb:hover {
   background: #a366ff;
 }
+
