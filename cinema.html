@@ -6,6 +6,58 @@
   <title>video time!</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #d1f0ff, #e0c7f9); /* teal + purple gradient */
+    }
+
+    .video-section {
+      background: linear-gradient(135deg, #a0e7e5, #b39ddb);
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      margin: 20px 0;
+      color: #fff;
+    }
+
+    .video-section iframe {
+      border-radius: 15px;
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+    }
+
+    .video-section p {
+      margin-top: 10px;
+    }
+
+    .header-gif {
+      width: 150px;
+      margin: 10px 0;
+    }
+
+    .small-gif {
+      width: 30px;
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 25px;
+      text-decoration: none;
+      color: #fff;
+      background: #ff99cc;
+      padding: 10px 20px;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: background 0.2s ease;
+    }
+
+    .back:hover {
+      background: #ff66aa;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -16,7 +68,7 @@
     </header>
 
     <section class="video-section">
-      <iframe width="560" height="315" 
+      <iframe 
         src="https://www.youtube.com/embed/WiinVuzh4DA" 
         title="YouTube video player" 
         frameborder="0" 
@@ -30,4 +82,3 @@
   </div>
 </body>
 </html>
-
