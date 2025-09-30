@@ -6,6 +6,36 @@
   <title>boyfriend's day!</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Override for card-grid: all cards in single row */
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: linear-gradient(135deg, #a0e7e5, #b39ddb);
+      color: #fff;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .card h2, .card p {
+      color: #fff;
+    }
+
+    body {
+      background: linear-gradient(135deg, #d1f0ff, #e0c7f9); /* soft teal-purple */
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -47,6 +77,3 @@
   </div>
 </body>
 </html>
-
-
-
