@@ -151,3 +151,14 @@ header p {
 .card-grid::-webkit-scrollbar-thumb:hover {
   background: #a366ff;
 }
+
+/* ===== GIFTS AND CINEMA PAGE COLORS ===== */
+.gifts-list, .video-section, .extra-notes {
+  background: #e0f7f9; /* light teal */
+  color: #000; /* black text */
+}
+
+.gifts-list .gift-card {
+  background: #d1c0ff; /* light purple accents */
+  color: #000; /* black text inside gift cards */
+}
