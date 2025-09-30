@@ -121,16 +121,17 @@ header p {
   display: inline-block;
   margin-top: 25px;
   text-decoration: none;
-  color: #fff;
+  color: #000; /* black text for readability */
   background: #66c2ff; /* teal back button */
   padding: 10px 20px;
   border-radius: 12px;
   font-weight: bold;
-  transition: background 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
 .back:hover {
   background: #a366ff; /* purple hover */
+  color: #fff; /* optional: white text on hover for contrast */
 }
 
 /* ===== SCROLLBAR STYLING FOR CARD GRID ===== */
@@ -183,3 +184,4 @@ header p {
 .container header img.small-gif {
   margin-left: 10px;
 }
+
