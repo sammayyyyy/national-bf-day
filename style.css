@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  max-width: 1000px; /* slightly wider to fit 4 cards */
+  max-width: 900px;
   margin: 40px auto;
   padding: 20px;
   background: rgba(255, 255, 255, 0.9);
@@ -42,13 +42,17 @@ header p {
 
 /* ===== CARD GRID (Homepage) ===== */
 .card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  display: flex;
+  flex-wrap: nowrap; /* don't allow wrapping */
+  justify-content: center;
   gap: 20px;
   margin-top: 30px;
+  overflow-x: auto; /* optional: horizontal scroll if needed */
 }
 
 .card {
+  display: block;
+  width: 220px;
   background: #e0f7f9; /* light teal background */
   border-radius: 15px;
   padding: 15px;
@@ -56,6 +60,8 @@ header p {
   color: #333;
   box-shadow: 0 6px 20px rgba(0,0,0,0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  flex: 1 1 20%; /* allow cards to shrink and grow */
+  max-width: 220px; /* keeps them from getting too big */
 }
 
 .card:hover {
@@ -82,10 +88,11 @@ header p {
   margin: 20px 0;
   padding: 15px;
   border-radius: 15px;
-  background: #e0f7f9; /* light teal for sections */
+  background: #e0f7f9; /* light teal for all sections */
   box-shadow: 0 6px 15px rgba(0,0,0,0.05);
 }
 
+/* ==== GIFTS AND BULLETS ACCENTS ==== */
 .gifts-list .gift-card, .bullet-points .cute-note {
   text-align: left;
   margin: 10px 0;
@@ -97,6 +104,7 @@ header p {
   gap: 10px;
 }
 
+/* ===== LOVE LETTER TEXT ===== */
 .love-letter p {
   line-height: 1.6;
   font-size: 1rem;
@@ -125,7 +133,7 @@ header p {
   background: #a366ff; /* purple hover */
 }
 
-/* ===== OPTIONAL: SCROLLBAR STYLING FOR CARD GRID ===== */
+/* ===== SCROLLBAR STYLING FOR CARD GRID ===== */
 .card-grid::-webkit-scrollbar {
   height: 8px;
 }
