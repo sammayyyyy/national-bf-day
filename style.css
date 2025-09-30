@@ -1,6 +1,6 @@
 /* ===== GENERAL STYLES ===== */
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif; /* consistent font */
   margin: 0;
   padding: 0;
   background: linear-gradient(135deg, #c0f0f8, #d1c0ff); /* soft teal to light purple */
@@ -18,16 +18,8 @@ body {
 }
 
 /* ===== HEADERS ===== */
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  color: #000;
-}
-
-header p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  color: #000;
+header h1, header p {
+  color: #000; /* black text for headers */
 }
 
 .header-gif {
@@ -54,11 +46,11 @@ header p {
 .card {
   display: block;
   width: 220px;
-  background: #e0f7f9; /* light teal background */
+  background: #e0f7f9;
   border-radius: 15px;
   padding: 15px;
   text-decoration: none;
-  color: #000; /* black text */
+  color: #000;
   box-shadow: 0 6px 20px rgba(0,0,0,0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   flex: 1 1 20%;
@@ -67,7 +59,7 @@ header p {
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(128,0,128,0.2); /* subtle purple glow */
+  box-shadow: 0 10px 25px rgba(128,0,128,0.2);
 }
 
 .card img {
@@ -89,9 +81,10 @@ header p {
   margin: 20px 0;
   padding: 15px;
   border-radius: 15px;
-  background: #e0f7f9; /* light teal for all sections */
+  background: #e0f7f9; /* soft teal for all sections */
   box-shadow: 0 6px 15px rgba(0,0,0,0.05);
   color: #000; /* black text for readability */
+  font-family: 'Montserrat', sans-serif; /* force consistent font */
 }
 
 /* ===== GIFTS AND BULLETS ACCENTS ===== */
@@ -150,7 +143,7 @@ header p {
 
 .back:hover {
   background: #a366ff; /* purple hover */
-  color: #fff; /* text stays white */
+  color: #fff;
 }
 
 /* ===== SCROLLBAR STYLING FOR CARD GRID ===== */
