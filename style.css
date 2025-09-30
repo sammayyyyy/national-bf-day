@@ -127,28 +127,3 @@ header p {
 .back:hover {
   background: #ff66aa;
 }
-
-.header-gif {
-  animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-.container {
-  animation: fadeIn 1s ease forwards;
-  opacity: 0; /* start invisible */
-}
-
-@keyframes fadeIn {
-  to { opacity: 1; }
-}
-.small-gif {
-  animation: pulse 1.5s infinite;
-}
-
-@keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.2); }
-}
