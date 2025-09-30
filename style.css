@@ -179,3 +179,30 @@ video {
   font-size: 1em;
   color: #555;
 }
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header-gif {
+  width: 120px;
+  margin-top: 10px;
+}
+
+.love-letter {
+  background: rgba(255,255,255,0.9);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.small-gif {
+  display: block;
+  margin: 20px auto 0;
+  width: 100px;
+}
