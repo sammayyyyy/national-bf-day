@@ -88,3 +88,36 @@ video {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
+
+.love-letter {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  margin-top: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  font-size: 1em;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.bullet-points {
+  margin-top: 30px;
+}
+
+.cute-note {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #fff;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  max-width: 600px;
+}
+
+.small-gif {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
